@@ -1,1 +1,237 @@
-# CONTA-DE-ROBLOX-CNP-GRUPO-COM-1300-ROBUX
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Conta Roblox - CNP & Grupo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0b0f1a;
+            color: #e2e8f0;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .item-img {
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 12px;
+            background: #1e293b;
+        }
+        .avatar-main {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+        /* Estilo para o modal de contato */
+        #discord-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 50;
+            background: rgba(0,0,0,0.8);
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans selection:bg-blue-500/30">
+
+    <!-- Hero Section com Avatar -->
+    <div class="relative overflow-hidden pt-16 pb-8">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <div class="inline-block px-4 py-1 mb-6 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase">
+                    Conta Verificada & Pronta para Entrega
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    ESTILO <span class="gradient-text">CNP</span><br>PREMIUM
+                </h1>
+                <p class="text-slate-400 text-lg mb-8 max-w-lg">
+                    Conta focada em estética CNP com itens caros, animações completas e um grupo incluso com saldo de 1.300 Robux.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <div class="bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+                        <span class="block text-blue-400 font-bold text-2xl">9k+</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-tighter">Valor em Robux</span>
+                    </div>
+                    <div class="bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+                        <span class="block text-blue-400 font-bold text-2xl">1.3k</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-tighter">Saldo no Grupo</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 relative">
+                <div class="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full"></div>
+                <div class="glass-card p-4 rounded-3xl relative z-10">
+                   <div class="bg-slate-900 rounded-2xl overflow-hidden">
+                        <div class="p-8 text-center">
+                            <i class="fas fa-shield-check text-blue-500 text-4xl mb-4"></i>
+                            <p class="font-bold uppercase tracking-widest">Avatar Preview</p>
+                            <p class="text-sm text-slate-400 italic">"Estética Grêmio + CNP"</p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galeria de Itens -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-10 flex items-center gap-3">
+            <i class="fas fa-boxes text-blue-500"></i> Itens de Destaque
+        </h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="glass-card p-3 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="bg-slate-800 rounded-xl mb-3 flex items-center justify-center p-4">
+                    <span class="text-4xl text-cyan-400">❄️</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-200">Chifres de Gelo</h4>
+                <p class="text-xs text-slate-500">R$ 2.995</p>
+            </div>
+            <div class="glass-card p-3 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="bg-slate-800 rounded-xl mb-3 flex items-center justify-center p-4">
+                    <span class="text-4xl text-slate-200">🏴‍☠️</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-200">Chapéu Capitão</h4>
+                <p class="text-xs text-slate-500">R$ 1.995</p>
+            </div>
+            <div class="glass-card p-3 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="bg-slate-800 rounded-xl mb-3 flex items-center justify-center p-4">
+                    <span class="text-4xl text-slate-400">🎧</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-200">Fones 8-Bits</h4>
+                <p class="text-xs text-slate-500">R$ 795</p>
+            </div>
+            <div class="glass-card p-3 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="bg-slate-800 rounded-xl mb-3 flex items-center justify-center p-4">
+                    <span class="text-4xl text-indigo-400">✨</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-200">Anm. Levitação</h4>
+                <p class="text-xs text-slate-500">R$ 1.000</p>
+            </div>
+            <div class="glass-card p-3 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="bg-slate-800 rounded-xl mb-3 flex items-center justify-center p-4">
+                    <span class="text-4xl text-orange-400">🚀</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-200">Anm. Astronauta</h4>
+                <p class="text-xs text-slate-500">R$ 500</p>
+            </div>
+            <div class="glass-card p-3 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="bg-slate-800 rounded-xl mb-3 flex items-center justify-center p-4">
+                    <span class="text-4xl text-red-400">🐺</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-200">Anm. Lobisomem</h4>
+                <p class="text-xs text-slate-500">R$ 500</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes do Inventário -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fas fa-list text-blue-400"></i> Outros Acessórios
+                </h3>
+                <ul class="grid grid-cols-2 gap-4 text-sm text-slate-400">
+                    <li class="flex items-center gap-2 bg-white/5 p-2 rounded-lg">💇‍♂️ +20 Combos Hair</li>
+                    <li class="flex items-center gap-2 bg-white/5 p-2 rounded-lg">👓 Óculos Vintage</li>
+                    <li class="flex items-center gap-2 bg-white/5 p-2 rounded-lg">🦷 Bigode Omni-Man</li>
+                    <li class="flex items-center gap-2 bg-white/5 p-2 rounded-lg">🏏 Taco de Anime</li>
+                    <li class="flex items-center gap-2 bg-white/5 p-2 rounded-lg">🦊 Orelhas Raposa</li>
+                    <li class="flex items-center gap-2 bg-white/5 p-2 rounded-lg">💃 +5 Emotes Dance</li>
+                </ul>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-700 p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Grupo Incluso</h3>
+                    <p class="text-blue-100 mb-6">A conta acompanha um grupo com Robux pendentes para retirada.</p>
+                </div>
+                <div class="flex items-center justify-between bg-black/20 p-6 rounded-2xl border border-white/10">
+                    <div>
+                        <span class="text-white/60 text-xs font-bold uppercase">Saldo Pendente</span>
+                        <div class="text-4xl font-black text-white">1.300 R$</div>
+                    </div>
+                    <i class="fas fa-coins text-yellow-400 text-4xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="container mx-auto px-4 py-20 text-center">
+        <div class="glass-card p-12 rounded-[3rem] border-blue-500/30">
+            <h2 class="text-4xl font-bold mb-6 italic uppercase tracking-tighter">Faça sua Oferta</h2>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto">
+                Negociação direta via Discord. Aceito ofertas justas baseadas no valor de mercado dos itens.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button onclick="openDiscord()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-12 py-5 rounded-2xl transition transform hover:scale-105 flex items-center justify-center gap-3 shadow-lg shadow-indigo-500/20">
+                    <i class="fab fa-discord text-xl"></i> CHAMAR NO DISCORD
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal do Discord -->
+    <div id="discord-modal" onclick="closeDiscord()">
+        <div class="glass-card p-10 rounded-3xl text-center max-w-xs w-full mx-4 border-indigo-500/40" onclick="event.stopPropagation()">
+            <i class="fab fa-discord text-5xl text-indigo-500 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Meu Discord</h3>
+            <div class="bg-black/40 p-4 rounded-xl mb-6 font-mono text-indigo-400 text-lg border border-white/5">
+                13kdxnzo
+            </div>
+            <button onclick="copyDiscord()" id="copy-btn" class="w-full bg-white text-indigo-600 font-bold py-3 rounded-xl hover:bg-slate-100 transition">
+                Copiar Nick
+            </button>
+            <button onclick="closeDiscord()" class="mt-4 text-slate-500 text-sm hover:text-white">Fechar</button>
+        </div>
+    </div>
+
+    <footer class="py-12 text-center text-slate-600 text-xs border-t border-white/5">
+        &copy; 2024 Venda de Ativos Digitais - Roblox Marketplace
+    </footer>
+
+    <script>
+        function openDiscord() {
+            document.getElementById('discord-modal').style.display = 'flex';
+        }
+        function closeDiscord() {
+            document.getElementById('discord-modal').style.display = 'none';
+        }
+        function copyDiscord() {
+            const nick = "13kdxnzo";
+            const el = document.createElement('textarea');
+            el.value = nick;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            
+            const btn = document.getElementById('copy-btn');
+            btn.innerText = "Copiado!";
+            btn.classList.add('bg-green-500', 'text-white');
+            btn.classList.remove('bg-white', 'text-indigo-600');
+            
+            setTimeout(() => {
+                btn.innerText = "Copiar Nick";
+                btn.classList.remove('bg-green-500', 'text-white');
+                btn.classList.add('bg-white', 'text-indigo-600');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
